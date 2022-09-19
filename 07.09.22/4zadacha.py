@@ -1,0 +1,7 @@
+a=int(input())
+b=int(input())
+c=int(input())
+suma=sum([a,b,c])
+maximalka=max(a,b,c)
+minimalka=min(a,b,c)
+print(suma,maximalka,minimalka)
