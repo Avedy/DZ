@@ -1,15 +1,16 @@
 def main(req):
     if 'расп' in req.lower() or 'дни' in req.lower():
         zanyatie()
-    if 'трен' in req.lower() or 'контакт' in req.lower():
+    elif 'трен' in req.lower() or 'контакт' in req.lower():
         contact()
-    if 'оплат' in req.lower() or 'цена' in req.lower() or 'деньги' in req.lower():
+    elif 'оплат' in req.lower() or 'цена' in req.lower() or 'деньги' in req.lower():
         babki()
-    if 'адрес' in req.lower() or 'место' in req.lower() or 'локац' in req.lower():
+    elif 'адрес' in req.lower() or 'место' in req.lower() or 'локац' in req.lower():
         adress()
-    if 'не понятно' in req.lower() or 'вопрос' in req.lower() or 'что делать?' in req.lower():
+    elif 'не понятно' in req.lower() or 'вопрос' in req.lower() or 'что делать?' in req.lower():
         voprosi()
-
+    else:
+        print('Еще разочек :((((')
 def zanyatie():
         print('Расписание занятий:')
         print('Понедельник - 18:30')
